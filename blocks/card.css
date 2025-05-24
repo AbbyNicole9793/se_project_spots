@@ -1,0 +1,38 @@
+.card {
+  height: 445px;
+  width: 413px;
+  padding: 0 0 20px 0 ;
+}
+
+.card__image {
+  height: 413px;
+  width: 413px;
+  border-radius: 8px;
+  padding: 0 0 10px;
+}
+
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.2;
+  padding: 0 0 10px;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+
+.card__button {
+  width: 23px;
+  height: 20px;
+  opacity: 40%;
+  border: none;
+  background-color: #fcf5e5;
+  padding: 0;
+}
+
+.card__button:hover {
+  opacity: 100%;
+}
