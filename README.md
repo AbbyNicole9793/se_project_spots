@@ -1,5 +1,7 @@
 # Project 3: Spots
 
+Project 3: Spots, It is a website that presents different areas of travel with a profile picture and a description. It also has interactive buttons that will be further developed in future developments to this project.
+
 ### Overview  
 
 * Intro  
@@ -10,6 +12,10 @@
   
 This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
   
+**GitHub**
+
+* [Link to the project on Github](https://github.com/AbbyNicole9793/se_project_spots)
+
 **Figma**  
   
 * [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
@@ -19,3 +25,7 @@ This project is made so all the elements are displayed correctly on popular scre
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
   
 Good luck and have fun!
+
+**Video**
+
+

@@ -1,5 +1,13 @@
 @font-face {
   font-family: "Poppins";
   font-style: normal;
-  src: url("./fonts/Inter\,Istok_Web\,Noto_Serif\,Poppins\,Ubuntu.zip") format("truetype");
+  font-weight: 500px;
+  src: url("vendor\fonts\Inter,Istok_Web,Noto_Serif,Poppins,Ubuntu\Poppins\Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400px;
+  src: url("vendor\fonts\Inter,Istok_Web,Noto_Serif,Poppins,Ubuntu\Poppins\Poppins-Regular.ttf") format("truetype");
 }
