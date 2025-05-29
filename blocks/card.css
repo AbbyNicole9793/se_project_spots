@@ -1,11 +1,12 @@
 .card {
   max-width: 413px;
   padding: 0 0 20px 0;
+  font-family: poppins, serif;
 }
 
 .card__image {
   max-height: 413px;
-  max-width: 413px;
+  width: 413px;
   border-radius: 8px;
   padding: 0 0 10px;
 }
@@ -56,8 +57,7 @@
   }
 
   .card__title {
-    width: 95px;
-    height: 16px;
+    font-size: 16px;
   }
 
   .card__button {
