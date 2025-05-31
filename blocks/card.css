@@ -1,21 +1,20 @@
 .card {
   max-width: 413px;
   padding: 0 0 20px 0;
-  font-family: poppins, serif;
+  font-family: "poppins", arial, sans-serif;
 }
 
 .card__image {
   max-height: 413px;
   width: 413px;
   border-radius: 8px;
-  padding: 0 0 10px;
 }
 
 .card__description {
   display: flex;
   justify-content: space-between;
   line-height: 1.2;
-  padding: 0 0 10px;
+  margin-top: 12px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -23,6 +22,7 @@
 
 .card__title {
   font-weight: 500;
+  max-width: 350px;
   font-size: 20px;
   line-height: 1;
   margin: 0;
@@ -58,6 +58,7 @@
 
   .card__title {
     font-size: 16px;
+    max-width: 250px;
   }
 
   .card__button {

@@ -1,6 +1,10 @@
-# Project 3: Spots
+# Project Name and description
 
-Project 3: Spots, It is a website that presents different areas of travel with a profile picture and a description. It also has interactive buttons that will be further developed in future developments to this project.
+Project 3: Spots, It is a website that presents different areas of travel with a profile picture and a description. 
+
+## Plans on improving the project
+
+The project has interactive buttons that will be further developed in future developments to this project.
 
 ### Overview  
 

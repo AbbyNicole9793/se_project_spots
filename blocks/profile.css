@@ -7,7 +7,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-family: poppins, serif;
+  font-family: "poppins", arial, sans-serif;
 }
 
 .profile__avatar-block {
@@ -36,7 +36,8 @@
 
 .profile__header {
   margin: 0;
-  line-height: 32px;
+  font-size: 32px;
+  line-height: 1;
   font-weight: 500;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -53,7 +54,11 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  max-width: 97px;
+  max-width: 420px;
+  font-size: 16px;
+  line-height: 1;
+  opacity: .7;
+  font-weight: 500;
 }
 
 .profile__edit-button {
@@ -64,6 +69,10 @@
   cursor: pointer;
 }
 
+.profile__edit-text {
+  margin-left: 5px;
+}
+
 .profile__edit-button:hover {
   opacity: 100%;
 }
@@ -71,9 +80,16 @@
 .profile__add-button {
   margin-left: auto;
   margin-top: auto;
-  border: none;
-  background-color: #fcf5e5;
+  border-radius: 8px;
+  background-color: #000;
   cursor: pointer;
+  display: flex;
+  gap: 5px;
+  padding: 0 30px;
+}
+
+.profile__add-text {
+  color: #fff
 }
 
 .profile__add-button:hover {
