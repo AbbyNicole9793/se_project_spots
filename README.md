@@ -19,7 +19,7 @@ This project is made so all the elements are displayed correctly on popular scre
 **GitHub**
 
 * [Link to the project on Github]
-(https://github.com/AbbyNicole9793/se_project_spots)
+(https://abbynicole9793.github.io/se_project_spots/)
 
 **Figma**  
   
