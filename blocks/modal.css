@@ -109,7 +109,14 @@
 
   .modal__form {
     gap: 24px;
-    padding: 12px;
+  }
+
+  .modal__label {
+    font-size: 16px;
+  }
+
+  .modal__input {
+    font-size: 16px;
   }
 
   .modal__save-btn {
