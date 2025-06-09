@@ -50,8 +50,8 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 
 function handleNewPostSubmit(e) {
-  console.log(imageLinkInput);
-  console.log(imageCaptionInput);
+  console.log(imageLinkInput.value);
+  console.log(imageCaptionInput.value);
   e.preventDefault();
   newPostModal.classList.remove("modal_is-opened");
 };
