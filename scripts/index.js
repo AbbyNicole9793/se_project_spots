@@ -43,30 +43,38 @@ const imageCaptionInput = newPostModal.querySelector("#caption");
 const profileNameElement = document.querySelector(".profile__header");
 const profileDescriptionElement = document.querySelector(".profile__description");
 
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+};
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
+};
+
 
 editProfileBtn.addEventListener("click", function () {
   profileNameInput.value = profileNameElement.textContent;
   profileDescriptionInput.value = profileDescriptionElement.textContent;
-  editProfileModal.classList.add("modal_is-opened");
+  openModal(editProfileModal);
 });
 
 editProfileCloseBtn.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal)
 });
 
 newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
+  openModal(newPostModal);
 });
 
 newPostCloseBtn.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 });
 
 function handleEditProfileSubmit(e) {
   console.log("submitting");
   profileNameElement.textContent = profileNameInput.value;
   profileDescriptionElement.textContent = profileDescriptionInput.value;
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
   e.preventDefault();
 };
 
@@ -77,7 +85,7 @@ function handleNewPostSubmit(e) {
   console.log(imageLinkInput.value);
   console.log(imageCaptionInput.value);
   e.preventDefault();
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 };
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
