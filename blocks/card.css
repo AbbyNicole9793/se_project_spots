@@ -8,7 +8,7 @@
 
 
 .card__image {
-  max-height: 413px;
+  height: 413px;
   width: 413px;
   border-radius: 8px;
 }
@@ -18,7 +18,7 @@
   width: 32px;
   height: 32px;
   top: 10px;
-  left: 371px;
+  right: 10px;
   background-image: url(../images/delete-btn.svg);
   border: none;
   background-color: rgba(0, 0, 0, 0%);
@@ -57,11 +57,14 @@
   background-color: #fcf5e5;
   padding: 0;
   background-image: url(../images/like-icon.svg);
+  background-size: contain;
 }
 
 .card__button_is-clicked {
   background-image: url(../images/liked-btn.svg);
   opacity: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .card__button:hover {

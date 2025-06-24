@@ -38,7 +38,7 @@ const cardList = document.querySelector(".cards__list");
 const pictureModal = document.querySelector("#picture-modal");
 const imageElement = pictureModal.querySelector(".modal__image");
 const captionElement = pictureModal.querySelector(".modal__caption");
-const imageCloseBtn = pictureModal.querySelector(".modal__image_close_btn")
+const imageCloseBtn = pictureModal.querySelector(".modal__close-btn_type_preview")
 
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostBtn = document.querySelector(".profile__add-button");
@@ -140,6 +140,7 @@ function handleNewPostSubmit(e) {
   cardList.prepend(cardElement);
   e.preventDefault();
   closeModal(newPostModal);
+  newPostForm.reset();
 };
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
