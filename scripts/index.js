@@ -27,8 +27,10 @@ const initialCards = [{
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
 },
 ];
-const modal = document.querySelector(".modal");
+const modals = document.querySelectorAll(".modal");
+const closeButtons = document.querySelectorAll(".modal__close-btn");
 const modalEditProfileContainer = document.querySelector(".modal__container")
+
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileBtn = document.querySelector(".profile__edit-button");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
@@ -150,20 +152,23 @@ function handleNewPostSubmit(e) {
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
 
-modal.addEventListener("click", function (event) {
-  if (event.target === modal) {
-      closeModal(editProfileModal);
-    }
-})
 
-modal.addEventListener("click", function (event) {
-  if (event.target === modal) {
-      closeModal(newPostModal);
+modals.forEach((modal) => {
+  modal.addEventListener("mousedown", (evt) => {
+    if (
+      evt.target.classList.contains("modal")
+    ) {
+      closeModal(modal);
     }
-})
+  });
+  
+});
 
-modal.addEventListener("click", function (event) {
-  if (event.target === modal) {
-      closeModal(pictureModal);
+
+document.addEventListener("keydown", (evt) => {
+    if (evt.key === 'Escape') {
+      closeModal(document.querySelector(".modal_is-opened"))
     }
-})
+  })
+
+document.removeEventListener("keydown", (evt))
