@@ -27,6 +27,8 @@ const initialCards = [{
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
 },
 ];
+const modal = document.querySelector(".modal");
+const modalEditProfileContainer = document.querySelector(".modal__container")
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileBtn = document.querySelector(".profile__edit-button");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
@@ -44,6 +46,7 @@ const newPostModal = document.querySelector("#new-post-modal");
 const newPostBtn = document.querySelector(".profile__add-button");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const newPostForm = newPostModal.querySelector(".modal__form");
+const modalSubmitButton = newPostModal.querySelector(".modal__save-btn")
 const imageLinkInput = newPostModal.querySelector("#image-input");
 const imageCaptionInput = newPostModal.querySelector("#caption");
 
@@ -108,7 +111,7 @@ editProfileBtn.addEventListener("click", function () {
 });
 
 editProfileCloseBtn.addEventListener("click", function () {
-  closeModal(editProfileModal)
+  closeModal(editProfileModal);
 });
 
 newPostBtn.addEventListener("click", function () {
@@ -140,8 +143,27 @@ function handleNewPostSubmit(e) {
   cardList.prepend(cardElement);
   e.preventDefault();
   closeModal(newPostModal);
+  disableButton(modalSubmitButton, settings);
   newPostForm.reset();
+  
 };
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
 
+modal.addEventListener("click", function (event) {
+  if (event.target === modal) {
+      closeModal(editProfileModal);
+    }
+})
+
+modal.addEventListener("click", function (event) {
+  if (event.target === modal) {
+      closeModal(newPostModal);
+    }
+})
+
+modal.addEventListener("click", function (event) {
+  if (event.target === modal) {
+      closeModal(pictureModal);
+    }
+})
