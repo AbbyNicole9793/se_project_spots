@@ -76,7 +76,7 @@
   opacity: 100%;
 }
 
-.card__button_is-clicked:hover {
+.card__button_is_clicked:hover {
   opacity: .4;
 }
 

@@ -11,6 +11,7 @@ const showInputError = (formElement, inputElement, errorMessage, settings) => {
   const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
   errorElement.textContent = errorMessage;
   inputElement.classList.add(settings.inputErrorClass);
+  errorElement.classList.add(settings.errorClass) 
 };
 
 const hideInputError = (formElement, inputElement, settings) => {
@@ -18,6 +19,7 @@ const hideInputError = (formElement, inputElement, settings) => {
   
   errorElement.textContent = "";
   inputElement.classList.remove(settings.inputErrorClass);
+  errorElement.classList.remove(settings.errorClass)
 };
 
 const checkInputValidity = (formElement, inputElement) => {
@@ -47,6 +49,12 @@ const toggleButtonState = (inputList, buttonElement, settings) => {
 const disableButton = (buttonElement, settings) => {
   buttonElement.disabled = true;
   buttonElement.classList.add(settings.inactiveButtonClass)
+}
+
+const resetValidation = (formElement, inputList) => {
+  inputList.forEach((inputElement) => {
+    hideInputError(formElement, inputElement, settings)
+  })
 }
 
 const setEventListeners = (formElement, settings) => {
