@@ -1,0 +1,44 @@
+"token": "d01e2393-0511-4047-b2cd-e5f1d39fcd5a"
+
+function handleDeleteSubmit(e) {
+  e.preventDefault()
+
+}
+
+
+// You should already have a function that generates cards from the templates
+// and sets event listeners in them. You just need to slightly modify the
+// event listener.
+function getCardElement(data) {
+  // ...
+
+  // You should already have a delete button listener inside this function.
+  // Modify it so that you can pass the card element as an argument, as well
+  // as the card data.
+  deleteButton.addEventListener(
+    "click",
+    (evt) => handleDeleteCard(cardElement, data)
+  );
+}
+
+// You should already have a delete card handler. Modify it along these lines.
+// The card's ID should be available in the `data` argument.
+function handleDeleteCard(cardElement, data) {
+  selectedCard = ___;   // Assign the card element to selectedCard
+  selectedCardId = ___; // Assign the card's ID to selectedCardId
+  // open the delete confirmation modal
+}
+
+// The submission handler makes use of the selectedCard and selectedCardId
+// variables to target the correct card.
+function handleDeleteSubmit() {
+  api
+    .removeCard(___) // pass the ID the the api function
+    .then(() => {
+      // remove the card from the DOM
+      // close the modal
+    })
+    .catch(console.error);
+};
+
+deleteForm.addEventListener("submit", handleDeleteSubmit);

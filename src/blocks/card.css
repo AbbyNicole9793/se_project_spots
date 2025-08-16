@@ -37,7 +37,6 @@
 .card__description {
   display: flex;
   justify-content: space-between;
-  line-height: 1.2;
   margin-top: 12px;
 }
 
@@ -45,7 +44,6 @@
   font-weight: 500;
   max-width: 350px;
   font-size: 20px;
-  line-height: 1;
   margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -65,7 +63,7 @@
   background-size: contain;
 }
 
-.card__button_is-clicked {
+.card__button_is_clicked {
   background-image: url(../images/liked-btn.svg);
   opacity: 1;
   background-repeat: no-repeat;
