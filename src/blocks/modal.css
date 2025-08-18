@@ -220,7 +220,7 @@
 .modal__cancel-btn {
   border: 1px solid;
   background-color: #fff;
-  color: #212121;
+  color: hsl(0, 0%, 13%);
   border-radius: 8px;
   padding: 18px 58px;
   max-width: 156px;
@@ -241,8 +241,22 @@
     gap: 24px;
   }
 
+  .modal__container-delete {
+    display: flex;
+    align-items: center;
+  }
+
+  .modal__form_flex {
+    display: flex;
+    flex-direction: column;
+  }
+
   .modal__title {
     font-size: 20px;
+  }
+
+  .modal__title_delete {
+    text-align: center;
   }
 
   .modal__close-btn {
@@ -250,6 +264,11 @@
   }
 
   .modal__close-btn_type_preview {
+    top: -48px;
+    right: 0;
+  }
+
+  .modal__close-btn_type_delete {
     top: -48px;
     right: 0;
   }

@@ -1,8 +1,13 @@
-export function changeText(e, isLoading, loadingText = "Saving", textContent = "Save") {
+export function changeText(
+  e,
+  isLoading,
+  loadingText = "Saving",
+  textContent = "Save"
+) {
   const submitButton = e.submitter;
   if (isLoading === true) {
-    submitButton.textContent = loadingText
+    submitButton.textContent = loadingText;
   } else {
-    submitButton.textContent = textContent
+    submitButton.textContent = textContent;
   }
 }
